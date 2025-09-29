@@ -25,7 +25,7 @@ Este proyecto contiene una colección de mini ejercicios desarrollados en React 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/JohnMachaca/micro-react-exercises
 cd react-mini-excercises
 ```
 
