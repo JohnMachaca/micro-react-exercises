@@ -12,6 +12,9 @@ function App() {
         <li>
           <Link to="/contador">Contador</Link>
         </li>
+        <li>
+          <Link to="/contadordinamico">Contador Dinámico</Link>
+        </li>
       </ul>
     </>
   );
