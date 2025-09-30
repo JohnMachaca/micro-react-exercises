@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-blue-500 text-white p-4 shadow-md ">
+    <header className="bg-blue-500 text-white p-4 shadow-md w-full">
       <div className="container   mx-auto flex p-4 justify-between items-center ">
-        <h2 className="text-2xl font-bold text-white ">Ejercicios</h2>
+        <h2 className="text-2xl font-bold text-white ">
+          <Link to="/">Ejercicios</Link>
+        </h2>
         <nav>
           <ul>
             <li>
