@@ -22,24 +22,24 @@ function Contador() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Header />
-      <main className="flex-grow container mx-auto bg-gray-200 p-4 flex flex-col items-center justify-center">
-        <h1>Contador</h1>
-        <p>El contador actual es: {count}</p>
+      <main className="flex-grow container mx-auto bg-gray-100 p-4 flex flex-col items-center justify-center">
+        <h1 className="text-3xl font-bold underline">Contador</h1>
+        <p className="text-2xl">El contador actual es: {count}</p>
         <div className="m-4 flex p-4">
           <button
-            className="p-4 rounded-md bg-blue-500 text-white m-2"
+            className="p-4 rounded-md bg-blue-500 text-white m-2 text-xl"
             onClick={increment}
           >
             Incrementar
           </button>
           <button
-            className="p-4 rounded-md bg-red-500 text-white m-2"
+            className="p-4 rounded-md bg-red-500 text-white m-2 text-xl"
             onClick={decrement}
           >
             Decrementar
           </button>
           <button
-            className="p-4 rounded-md bg-green-500 text-white m-2"
+            className="p-4 rounded-md bg-green-500 text-white m-2 text-xl"
             onClick={reset}
           >
             Resetear
