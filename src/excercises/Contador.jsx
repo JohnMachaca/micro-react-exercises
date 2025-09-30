@@ -24,15 +24,17 @@ function Contador() {
       <Header />
       <h1>Contador</h1>
       <p>El contador actual es: {count}</p>
-      <button className="p-2 bg-blue-500 text-white" onClick={increment}>
-        Incrementar
-      </button>
-      <button className="p-2 bg-red-500 text-white" onClick={decrement}>
-        Decrementar
-      </button>
-      <button className="p-2 bg-green-500 text-white" onClick={reset}>
-        Resetear
-      </button>
+      <div className="m-4">
+        <button className="p-2 bg-blue-500 text-white" onClick={increment}>
+          Incrementar
+        </button>
+        <button className="p-2 bg-red-500 text-white" onClick={decrement}>
+          Decrementar
+        </button>
+        <button className="p-2 bg-green-500 text-white" onClick={reset}>
+          Resetear
+        </button>
+      </div>
       <BackToMenu />
     </>
   );
