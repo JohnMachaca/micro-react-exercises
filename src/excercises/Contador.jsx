@@ -31,15 +31,21 @@ function Contador() {
       <Header />
       <main className="flex-1 bg-gray-100 p-2 sm:p-4 lg:p-6 flex flex-col items-center justify-center max-w-full">
         <div className="w-full max-w-4xl mx-auto px-2 sm:px-4">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold underline text-center mb-4">Ejercicio 1</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold underline text-center mb-4">
+            Ejercicio 1
+          </h2>
           <p className="text-sm sm:text-base lg:text-lg mb-6 text-center px-2">
             Cree un contador que tenga 3 botones: incrementar, decrementar y
             resetear. El contador debe mostrar el valor actual y no permitir
             valores negativos.
           </p>
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold underline text-center mb-4">Contador</h3>
-          <p className="text-lg sm:text-xl lg:text-2xl text-center mb-6">El contador actual es: {count}</p>
-          
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold underline text-center mb-4">
+            Contador
+          </h3>
+          <p className="text-lg sm:text-xl lg:text-2xl text-center mb-6">
+            El contador actual es: {count}
+          </p>
+
           {/* Botones responsive - vertical en móvil, horizontal en desktop */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6">
             <button
