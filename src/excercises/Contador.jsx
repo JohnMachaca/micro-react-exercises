@@ -6,7 +6,7 @@ import Prism from "prismjs";
 import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-tomorrow.css";
 import { useEffect } from "react";
-
+//todo ok
 function Contador() {
   useEffect(() => {
     Prism.highlightAll();
