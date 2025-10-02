@@ -15,6 +15,9 @@ function App() {
           <li>
             <Link to="/contadordinamico">Contador Dinámico</Link>
           </li>
+          <li>
+            <Link to="/activoinactivo">Activo/Inactivo</Link>
+          </li>
         </ul>
       </div>
     </div>

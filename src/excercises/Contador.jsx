@@ -31,7 +31,7 @@ function Contador() {
       <Header />
       <main className="flex-1 bg-gray-100 p-2 sm:p-4 lg:p-6 flex flex-col items-center justify-center max-w-full">
         <div className="w-full max-w-4xl mx-auto px-2 sm:px-4">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold underline text-center mb-4">
+          <h2 className="text-xl   sm:text-2xl lg:text-3xl font-bold underline text-center mb-6">
             Ejercicio 1
           </h2>
           <p className="text-sm sm:text-base lg:text-lg mb-6 text-center px-2">
@@ -69,9 +69,13 @@ function Contador() {
           </div>
           {/* Bloque de código responsive */}
           <div className="w-full bg-gray-800 rounded-lg p-3 sm:p-4 overflow-x-auto">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold underline text-center mb-4 text-white">
+              Solución
+            </h2>
             <pre className="text-xs sm:text-sm">
               <code className="language-jsx text-green-400">
                 {`// Código del contador
+ import { useState } from "react";
 const [count, setCount] = useState(0);
 
 const increment = () => {
@@ -91,7 +95,7 @@ const reset = () => {
 
 // JSX del contador
 <p>El contador actual es: {count}</p>
-<div className="flex flex-col sm:flex-row gap-3">
+<div >
   <button onClick={increment}>
     Incrementar
   </button>
