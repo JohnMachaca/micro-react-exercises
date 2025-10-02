@@ -17,24 +17,27 @@ function ActivoInactivo() {
         {activo ? "Activo" : "Inactivo"}
       </button>
       {/* Bloque de código responsive */}
-      <div className="w-full max-w-md bg-gray-800 rounded-lg p-3 sm:p-4 overflow-x-auto">
+      <div className="max-w-md bg-gray-800 rounded-lg p-3 sm:p-4 overflow-x-auto">
         <h2 className="text-lg sm:text-xl lg:text-2xl font-bold underline text-center mb-4 text-white">
           Solución
         </h2>
         <pre className="text-xs sm:text-sm">
           <code className="language-jsx text-green-400">
-            {`// Código del activo/inactivo
-import { useState } from "react";
-const [activo, setActivo] = useState(false);
+            {`import { useState } from 'react';
+export function App(props) {
+  const [activo, setActivo] = useState(false);
+  const handle = () => {
+    setActivo(!activo);
+  };
 
-const handle = () => {
-  setActivo(!activo);
-};
-
-// JSX del activo/inactivo
-<button onClick={handle}>
-  {activo ? "Activo" : "Inactivo"}
-</button>`}
+  return (
+    <div className='App'>
+      <h1>Activo/inactivo</h1>
+      <button onClick={handle}>{activo ? 'Activo' : 'Inactivo'}</button>
+    </div>
+  );
+}
+`}
           </code>
         </pre>
       </div>
@@ -42,5 +45,3 @@ const handle = () => {
   );
 }
 export default ActivoInactivo;
-// Log to console
-console.log("Hello console");
